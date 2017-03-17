@@ -10,19 +10,19 @@ detailing its usage][article].
   [spec]: https://www.w3.org/TR/wai-aria-1.1/#aria-current
   [article]: http://tink.uk/using-the-aria-current-attribute/
 
-# Install
+# Installation
 
 1. Add middleman-aria_current to your `Gemfile`:
 
-  ```
-  gem "middleman-aria_current"
-  ```
+    ```bash
+    gem "middleman-aria_current"
+    ```
 
-1. Run:
+1. Install the gem:
 
-  ```
-  bundle install
-  ```
+    ```bash
+    bundle install
+    ```
 
 ## Usage
 
