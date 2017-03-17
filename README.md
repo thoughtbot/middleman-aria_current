@@ -36,7 +36,7 @@ detailing its usage][article].
 
 ## License
 
-middleman-aria_current is Copyright (c) 2017 Tyson Gach and thoughtbot, inc.
+middleman-aria_current is copyright © 2017 Tyson Gach and thoughtbot, inc.
 It is free software, and may be redistributed
 under the terms specified in the [LICENSE] file.
 
