@@ -24,6 +24,12 @@ detailing its usage][article].
     bundle install
     ```
 
+1. Activate the extension in `config.rb`:
+
+    ```ruby
+    activate :aria_current
+    ```
+
 ## Usage
 
 ```erb
