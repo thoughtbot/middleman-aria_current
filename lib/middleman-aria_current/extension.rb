@@ -1,7 +1,7 @@
 require "middleman-core"
 
 class AriaCurrent < ::Middleman::Extension
-  FILE_EXTENSION = /\.(\w*)$/
+  FILE_EXTENSION = /\.(\w+)$/
 
   helpers do
     def current_link_to(*arguments, aria_current: "page", **options, &block)
