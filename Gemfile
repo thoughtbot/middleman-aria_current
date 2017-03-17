@@ -8,7 +8,6 @@ end
 
 group :development do
   gem "rake"
-  gem "rdoc"
   gem "yard"
 end
 
