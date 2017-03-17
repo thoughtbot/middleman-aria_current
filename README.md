@@ -34,10 +34,12 @@ detailing its usage][article].
 
 ```erb
 <%= current_link_to "Home", "/" %>
+<%= current_link_to "About", "/about" %>
 ```
 
 ```html
 <a href="/" aria-current="page">Home</a>
+<a href="/about">About</a>
 ```
 
 ## License
