@@ -19,5 +19,11 @@ using `aria-current`.
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
+  s.add_development_dependency "aruba", "~> 0.14"
+  s.add_development_dependency "capybara", "~> 2.13"
+  s.add_development_dependency "cucumber", "~> 2.4"
+  s.add_development_dependency "middleman-cli", "~> 4.2"
+  s.add_development_dependency "rake", "~> 12.0"
+  s.add_development_dependency "rspec", "~> 3.5"
   s.add_runtime_dependency "middleman-core", "~> 4.2"
 end
