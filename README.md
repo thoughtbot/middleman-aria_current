@@ -42,6 +42,14 @@ detailing its usage][article].
 <a href="/about">About</a>
 ```
 
+## Contributing
+
+See the [contributing document].
+Thank you, [contributors]!
+
+  [contributing document]: CONTRIBUTING.md
+  [contributors]: https://github.com/thoughtbot/middleman-aria_current/graphs/contributors
+
 ## License
 
 middleman-aria_current is copyright © 2017 Tyson Gach and thoughtbot, inc.
