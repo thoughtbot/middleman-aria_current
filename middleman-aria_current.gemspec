@@ -22,8 +22,8 @@ using `aria-current`.
   s.add_development_dependency "aruba", "~> 0.14"
   s.add_development_dependency "capybara", "~> 2.13"
   s.add_development_dependency "cucumber", "~> 2.4"
-  s.add_development_dependency "middleman-cli", "~> 4.2"
+  s.add_development_dependency "middleman-cli", "~> 4.0"
   s.add_development_dependency "rake", "~> 12.0"
   s.add_development_dependency "rspec", "~> 3.5"
-  s.add_runtime_dependency "middleman-core", "~> 4.2"
+  s.add_runtime_dependency "middleman-core", "~> 4.0"
 end
