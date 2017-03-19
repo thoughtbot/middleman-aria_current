@@ -8,10 +8,15 @@ Gem::Specification.new do |s|
   s.authors     = ["Tyson Gach", "Sean Doyle"]
   s.email       = ["tyson@thoughtbot.com", "sean@thoughtbot.com"]
   s.homepage    = "https://github.com/thoughtbot/middleman-aria_current"
-  s.summary     = <<-HERE
+  s.summary     = <<-SUM
 A Middleman extension for indicating a current (active) link
 using `aria-current`.
-  HERE
+  SUM
+  s.summary     = <<-DESC
+middleman-aria_current provides a `current_link_to` helper, which wraps the
+built-in `link_to` helper. It checks the URL of the current visited page and
+outputs an `aria-current` attribute if it matches the URL in the link.
+  DESC
   s.license     = "MIT"
 
   s.files         = `git ls-files`.split("\n")

@@ -32,15 +32,65 @@ detailing its usage][article].
 
 ## Usage
 
+middleman-aria_current provides a `current_link_to` helper, which wraps the
+built-in `link_to` helper. It checks the URL of the current visited page and
+outputs an `aria-current` attribute if it matches the URL in the link.
+
+As an example, below is a typical website navigation where we use
+`current_link_to` for each link (using ERB):
+
 ```erb
-<%= current_link_to "Home", "/" %>
-<%= current_link_to "About", "/about" %>
+<nav>
+  <%= current_link_to "Home", "/" %>
+  <%= current_link_to "About", "/about" %>
+</nav>
 ```
 
+Now, when you visit `/about`, the link for that page will be given the
+`aria-current` attribute:
+
 ```html
-<a href="/" aria-current="page">Home</a>
-<a href="/about">About</a>
+<nav>
+  <a href="/">Home</a>
+  <a href="/about" aria-current="page">About</a>
+</nav>
 ```
+
+---
+
+By default, `current_link_to` will output the `page` value for `aria-current`.
+You can also pass it one of `aria-current`’s other accepted values: `step`,
+`location`, `date`, `time`, `true`, or `false`:
+
+```erb
+<%= current_link_to "Step 1", "/step-1", aria_current: "step" %>
+<%= current_link_to "Step 2", "/step-2", aria_current: "step" %>
+<%= current_link_to "Step 3", "/step-3", aria_current: "step" %>
+```
+
+Provided that you are currently visiting `/step-2`, the output will be:
+
+```html
+<a href="/step-1">Step 1</a>
+<a href="/step-2" aria-current="step">Step 2</a>
+<a href="/step-3">Step 3</a>
+```
+
+---
+
+For styling current links, you can use a [CSS attribute selector][selector_mdn]:
+
+```css
+[aria-current]:not([aria-current="false"]) {
+  font-weight: bold;
+}
+```
+
+Note that we _exclude_ styling the link if `aria-current` has a value of
+`false`. This is because `false` is a valid and useful value for denoting a link
+that does not represent the current item within a set.
+
+  [selector_mdn]: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
 
 ## Contributing
 
