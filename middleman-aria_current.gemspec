@@ -24,7 +24,6 @@ outputs an `aria-current` attribute if it matches the URL in the link.
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency "aruba", "~> 0.14"
   s.add_development_dependency "capybara", "~> 2.13"
   s.add_development_dependency "cucumber", "~> 2.4"
   s.add_development_dependency "middleman-cli", "~> 4.0"
