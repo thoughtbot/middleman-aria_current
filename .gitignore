@@ -1,3 +1,4 @@
 *gem
-/Gemfile.lock
-/pkg
+build
+Gemfile.lock
+pkg
