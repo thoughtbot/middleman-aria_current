@@ -10,6 +10,8 @@ The format is loosely based on [Keep a Changelog] and this project adheres to
 
 ## master
 
+- Yield block as contents 
+
 - Instead of determining the "current" resource through `String` comparison
   (including incorporating the resource file's extension), make use of the
   [`sitemap`][sitemap].
