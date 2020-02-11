@@ -8,6 +8,15 @@ The format is loosely based on [Keep a Changelog] and this project adheres to
   [Keep a Changelog]: http://keepachangelog.com/
   [Semantic Versioning]: http://semver.org/
 
+## master
+
+- Instead of determining the "current" resource through `String` comparison
+  (including incorporating the resource file's extension), make use of the
+  [`sitemap`][sitemap].
+
+  [sitemap]: [sitemap]: https://middlemanapp.com/advanced/sitemap/#accessing-the-sitemap-from-code
+
+
 ## [0.1.1] - 2017-03-19
 
 ### Changed

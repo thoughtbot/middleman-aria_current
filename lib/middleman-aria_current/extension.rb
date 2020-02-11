@@ -1,8 +1,6 @@
 require "middleman-core"
 
 class AriaCurrent < ::Middleman::Extension
-  FILE_EXTENSION = /\.(\w+)$/
-
   helpers do
     def current_link_to(*arguments, aria_current: "page", **options, &block)
       if block_given?
@@ -14,9 +12,10 @@ class AriaCurrent < ::Middleman::Extension
       end
 
       link_options = options
-      current_path = current_page.url.to_s.gsub(FILE_EXTENSION, "")
 
-      if current_path == path
+      uri = URI.parse(path.to_s)
+
+      if current_resource == sitemap.find_resource_by_path(uri.path)
         link_options.merge!("aria-current" => aria_current)
       end
 
