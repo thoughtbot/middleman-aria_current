@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.5
+    steps:
+      - checkout
+      - run:
+          name: Install gem dependencies
+          command: bundle install --path vendor/bundle
+      - run:
+          name: Run tests
+          command: bundle exec rake test
