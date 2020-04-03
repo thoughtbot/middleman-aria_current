@@ -10,6 +10,8 @@ The format is loosely based on [Keep a Changelog] and this project adheres to
 
 ## master
 
+## [0.1.2] - 2020-04-03
+
 - Yield block as contents 
 
 - Instead of determining the "current" resource through `String` comparison
